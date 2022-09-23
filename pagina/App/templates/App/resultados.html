@@ -1,0 +1,16 @@
+{%extends 'App/padre.html' %}
+
+{%load static%}
+
+{%block contenido%}
+    <p>Estas buscando un centro de estudio con {{busqueda}} estudiantes...
+
+        {%for alumnos in cantAlumnos%}
+            <ul>
+                <li>lugar:{{alumnos.nombre}}</li>
+                <li>cantAlumnos:{{alumnos.cantAlumnos}}</li>
+            </ul>
+
+        {%endfor%}
+    </p>
+{%endblock%}
